@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Groundglass — a manual camera for Android, and nothing else</title>
+<meta name="description" content="Groundglass is a manual stills camera for Android: a fullscreen viewfinder with a rangefinder bright-line frame, ISO 25–12800, shutter to 30 seconds, Kelvin white balance, manual focus and free RAW DNG. No subscription, no account, no internet permission.">
+<link rel="canonical" href="https://trunghieuvn.github.io/groundglass/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#141210">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Groundglass">
+<meta property="og:title" content="Groundglass — a manual camera for Android, and nothing else">
+<meta property="og:description" content="A fullscreen viewfinder with a bright-line frame, full manual exposure, and free RAW DNG. No subscription, no account, no internet permission.">
+<meta property="og:url" content="https://trunghieuvn.github.io/groundglass/">
+<meta property="og:image" content="https://trunghieuvn.github.io/groundglass/assets/feature.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Groundglass — a manual camera for Android">
+<meta name="twitter:description" content="Fullscreen viewfinder, full manual control, free RAW DNG. No account, no ads, no network permission.">
+<meta name="twitter:image" content="https://trunghieuvn.github.io/groundglass/assets/feature.png">
+
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Groundglass: Manual Camera",
+  "operatingSystem": "Android 8.0+",
+  "applicationCategory": "MultimediaApplication",
+  "url": "https://trunghieuvn.github.io/groundglass/",
+  "author": { "@type": "Organization", "name": "FightTech VN" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 60 40" width="30" height="20" aria-hidden="true">
+        <rect x="0" y="0" width="60" height="40" rx="4" fill="#E7E2D8"/>
+        <circle cx="30" cy="20" r="14" fill="#B9B2A4"/>
+        <circle cx="30" cy="20" r="9" fill="#8E877A"/>
+        <rect x="21" y="19" width="18" height="2" fill="#141210"/>
+        <path d="M6,6 h9 v2 h-7 v7 h-2 z M54,6 h-9 v2 h7 v7 h2 z M6,34 h9 v-2 h-7 v-7 h-2 z M54,34 h-9 v-2 h7 v-7 h2 z" fill="#E8A33D"/>
+      </svg>
+      Groundglass
+    </a>
+    <div class="links">
+      <a href="#finder" class="hide-sm">Viewfinder</a>
+      <a href="#manual" class="hide-sm">Manual</a>
+      <a href="#privacy" class="hide-sm">Privacy</a>
+      <a href="#faq">FAQ</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Android · manual stills camera</p>
+      <h1>Just the <span class="accent">viewfinder</span>, and everything behind it.</h1>
+      <p class="lede">A screen-filling preview with a rangefinder-style bright-line frame, so the frame never lies about what the picture will contain. Every control a photographer actually reaches for is one tap from the shutter — and nothing else is.</p>
+      <div class="btn-row">
+        <!-- The listing is in review for open testing; the public Play URL
+             404s until it opens. On launch day replace this span with
+             <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=vn.fighttech.groundglass"> -->
+        <span class="btn btn-ghost" style="border-style: dashed; color: var(--muted)">In review for open testing on Google Play</span>
+        <a class="btn btn-ghost" href="#manual">What it controls</a>
+      </div>
+      <p class="fineprint">Free. RAW DNG included, not an unlock. No subscription, no watermark, no account — and no internet permission at all.</p>
+    </div>
+    <div>
+      <img class="shot-hero" src="screenshots/1_viewfinder.jpg" width="720" height="1600" alt="The Groundglass viewfinder filling the screen, with amber bright-line corners and the exposure readout along the bottom" fetchpriority="high">
+    </div>
+  </div>
+</header>
+
+<section class="bordered" id="finder">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">The frame is the product.</h2>
+      <p class="lede reveal">Most camera apps show you a preview and crop something else. Groundglass draws the bright-line frame over a fullscreen preview and captures exactly what sits inside it.</p>
+    </div>
+    <div class="grid">
+      <div class="card reveal">
+        <p class="num">01</p>
+        <h3>Bright-line frame</h3>
+        <p>Amber corners mark the picture. Everything inside them is in the file; everything outside is the part of the sensor you are seeing but not keeping.</p>
+      </div>
+      <div class="card reveal">
+        <p class="num">02</p>
+        <h3>FILL or FIT</h3>
+        <p>FILL covers the screen for composing at arm's length. FIT shows the whole sensor frame when you need to see the edges. Either way the still is cropped from what you framed.</p>
+      </div>
+      <div class="card reveal">
+        <p class="num">03</p>
+        <h3>A readout, not a menu</h3>
+        <p>ISO, shutter, exposure compensation, white balance and focus mode stay on screen the way they do on a DSLR's top plate. Collapse the controls entirely for a clean frame.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bordered" id="shots">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">Through the viewfinder.</h2>
+      <p class="lede reveal">Screens from the app as it ships. Tap any of them to see it full size.</p>
+    </div>
+    <div class="rail">
+      <figure class="reveal">
+        <img src="screenshots/1_viewfinder.jpg" width="720" height="1600" loading="lazy" alt="Fullscreen viewfinder with bright-line frame and exposure readout">
+        <figcaption>The frame, the histogram, the readout.</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="screenshots/2_manual.jpg" width="720" height="1600" loading="lazy" alt="Manual controls open, showing the white balance Kelvin ruler and exposure dials">
+        <figcaption>Dials on a click-stop ruler.</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="screenshots/3_bracket.jpg" width="720" height="1600" loading="lazy" alt="Drive mode panel with exposure bracketing, burst, intervalometer and self-timer">
+        <figcaption>Bracket, burst, interval, timer.</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="screenshots/4_settings.png" width="720" height="1600" loading="lazy" alt="Settings screen listing file format, folder, EXIF and geotag options">
+        <figcaption>Format, folder, EXIF, geotag.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="bordered" id="manual">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">Set it by hand, or let the camera keep it.</h2>
+      <p class="lede reveal">You never pick an exposure mode from a list. Dial a value in and that control is yours; leave it alone and the camera holds it. The letter in the readout only tells you where you stand — P, S, I or M.</p>
+    </div>
+    <div class="grid">
+      <div class="card reveal">
+        <h3>Exposure</h3>
+        <ul>
+          <li>ISO 25–12800 on a click-stop dial</li>
+          <li>Shutter 1/8000 s to 30 s</li>
+          <li>Exposure compensation in ⅓ stops</li>
+          <li>Spot, centre-weighted and matrix metering</li>
+          <li>AE, AWB and AF locks that stay put while you recompose</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Colour and focus</h3>
+        <ul>
+          <li>Manual white balance, 2200 K to 9500 K</li>
+          <li>Eight presets for the light you know</li>
+          <li>Manual focus by distance</li>
+          <li>AF-C, AF-S, macro and infinity</li>
+          <li>Tap to focus, pinch to zoom, swipe for compensation</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Composition aids</h3>
+        <ul>
+          <li>Live RGB histogram</li>
+          <li>Rule of thirds, golden ratio and other grids</li>
+          <li>Crop guides</li>
+          <li>Electronic level for horizons and architecture</li>
+          <li>Volume keys as shutter, compensation or zoom</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>RAW DNG, free</h3>
+        <p>A DNG holds the sensor data before any processing — what you want if you intend to develop the picture yourself. It is included, not sold as an unlock. On a device that cannot produce one, the option hides itself instead of sitting there dead.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Drive modes</h3>
+        <ul>
+          <li>Single frame and burst</li>
+          <li>Exposure bracketing: 3, 5 or 7 frames, ⅓ to 3 stops</li>
+          <li>Intervalometer by frame count or duration</li>
+          <li>Self-timer, 3 or 10 seconds</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Files and EXIF</h3>
+        <ul>
+          <li>JPG, PNG and HEIF, with quality you choose</li>
+          <li>Your own filename pattern and gallery folder</li>
+          <li>EXIF written from the capture request itself</li>
+          <li>Optional geotag, off by default</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bordered">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">Ranges, plainly.</h2>
+      <p class="lede reveal">What your phone can actually do depends on its Camera2 support, which varies by manufacturer. Controls your camera cannot honour are hidden rather than shown as dead switches.</p>
+    </div>
+    <div class="spec-wrap reveal">
+      <table class="spec">
+        <tr><th>ISO</th><td>25 – 12800, click-stop, device range permitting</td></tr>
+        <tr><th>Shutter speed</th><td>1/8000 s – 30 s</td></tr>
+        <tr><th>Exposure compensation</th><td>±, in ⅓ stops, across the device's own range</td></tr>
+        <tr><th>White balance</th><td>2200 K – 9500 K manual, plus eight presets</td></tr>
+        <tr><th>Focus</th><td>Manual by distance; AF-C, AF-S, macro, infinity</td></tr>
+        <tr><th>Formats</th><td>JPG, PNG, HEIF, and RAW DNG where the sensor supports it</td></tr>
+        <tr><th>Android</th><td>8.0 (API 26) and newer</td></tr>
+        <tr><th>Price</th><td>Free. No subscription, no in-app purchase, no ads</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="privacy">
+  <div class="wrap">
+    <h2 class="reveal">It cannot send your photos anywhere.</h2>
+    <p class="lede reveal">Not "we promise not to" — the shipped build declares no <code>INTERNET</code> permission, so there is no network for a photo to leave by.</p>
+    <div class="cols">
+      <div class="reveal"><strong>No account</strong><p>No sign-in, no email, no profile. Open the app and shoot.</p></div>
+      <div class="reveal"><strong>No analytics, no ads</strong><p>No usage tracking, no crash SDK, no ad SDK. The advertising ID permission is removed from the build.</p></div>
+      <div class="reveal"><strong>Your files stay yours</strong><p>Photos land in <code>Pictures/Groundglass</code> on your own storage. Uninstalling the app does not touch them.</p></div>
+    </div>
+    <p style="margin-top:30px" class="reveal"><a href="privacy.html">Read the full privacy policy →</a></p>
+  </div>
+</section>
+
+<section class="bordered">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">What Groundglass is <span class="accent">not</span>.</h2>
+      <p class="lede reveal">There are no LUTs, no effects, no beauty processing and no photo editor. It takes the picture and hands it to you. If you want colour grading, do it in the editor you already trust — that is a different job, and this app deliberately does not try to do it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bordered" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">Fair questions.</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>Is RAW really free?</summary>
+        <p>Yes. DNG capture is part of the app, not an unlock, and there is nothing to buy in Groundglass at all. Whether your phone can produce a DNG is up to its camera hardware and firmware, not to us.</p>
+      </details>
+      <details>
+        <summary>Why does ISO or shutter speed show as unavailable on my phone?</summary>
+        <p>Manual sensor control is an optional Camera2 capability. Some devices — and most emulators — expose the camera without it, and no app can dial in ISO or shutter speed there. Groundglass hides those controls instead of showing switches that do nothing.</p>
+      </details>
+      <details>
+        <summary>Where do my photos go?</summary>
+        <p>Into <code>Pictures/Groundglass</code> in your device's own storage by default, registered with the media library so your Gallery sees them immediately. You can change the folder name and the filename pattern in settings.</p>
+      </details>
+      <details>
+        <summary>Does it geotag my photos?</summary>
+        <p>Only if you switch that on. It is off by default, and until you enable it the app never requests the location permission. When enabled, the coordinates are written into the EXIF of your own image files, on the device. Remember that the metadata travels with the file when you share it.</p>
+      </details>
+      <details>
+        <summary>Is there an iPhone version?</summary>
+        <p>No. Groundglass is Android only.</p>
+      </details>
+      <details>
+        <summary>Who makes it?</summary>
+        <p>FightTech VN, a small team in Vietnam. Write to <a href="mailto:trunghieu4121993@gmail.com">trunghieu4121993@gmail.com</a> — the address on the Play listing reaches the people who wrote the app.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2 class="reveal">Bring your own light.</h2>
+    <p class="lede reveal">Groundglass is finishing its first release on Google Play. Nothing to pre-order and nothing to sign up for — check back, or tell us what a manual camera app still gets wrong.</p>
+    <div class="btn-row reveal">
+      <a class="btn btn-primary" href="mailto:trunghieu4121993@gmail.com">Email us</a>
+      <a class="btn btn-ghost" href="support.html">Support</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand" style="gap:10px">
+          <svg viewBox="0 0 60 40" width="26" height="17" aria-hidden="true">
+            <rect x="0" y="0" width="60" height="40" rx="4" fill="#E7E2D8"/>
+            <circle cx="30" cy="20" r="14" fill="#B9B2A4"/>
+            <circle cx="30" cy="20" r="9" fill="#8E877A"/>
+            <rect x="21" y="19" width="18" height="2" fill="#141210"/>
+            <path d="M6,6 h9 v2 h-7 v7 h-2 z M54,6 h-9 v2 h7 v7 h2 z M6,34 h9 v-2 h-7 v-7 h-2 z M54,34 h-9 v-2 h7 v-7 h2 z" fill="#E8A33D"/>
+          </svg>
+          Groundglass
+        </div>
+        <div class="pkg" style="margin-top:8px">vn.fighttech.groundglass</div>
+      </div>
+      <div class="links">
+        <a href="./">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:trunghieu4121993@gmail.com">Contact</a>
+      </div>
+    </div>
+    <p class="fine">Groundglass — a manual stills camera for Android, made in Vietnam by FightTech VN.<br>
+    © 2026 FightTech VN. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </div>
+</footer>
+
+<div id="lightbox" aria-hidden="true"><img alt=""></div>
+<script src="js/main.js"></script>
+</body>
+</html>

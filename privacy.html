@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Privacy Policy — Groundglass for Android</title>
+<meta name="description" content="Privacy Policy for Groundglass (vn.fighttech.groundglass): what the camera, location and storage permissions are used for, why geotagging stays on your device, and why the app has no internet permission and sends nothing anywhere.">
+<link rel="canonical" href="https://trunghieuvn.github.io/groundglass/privacy.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#141210">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Groundglass">
+<meta property="og:title" content="Privacy Policy — Groundglass for Android">
+<meta property="og:description" content="Privacy Policy for Groundglass (vn.fighttech.groundglass): what the camera, location and storage permissions are used for, why geotagging stays on your device, and why the app has no internet permission and sends nothing anywhere.">
+<meta property="og:url" content="https://trunghieuvn.github.io/groundglass/privacy.html">
+<meta property="og:image" content="https://trunghieuvn.github.io/groundglass/assets/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Privacy Policy — Groundglass for Android">
+<meta name="twitter:description" content="Privacy Policy for Groundglass (vn.fighttech.groundglass): what the camera, location and storage permissions are used for, why geotagging stays on your device, and why the app has no internet permission and sends nothing anywhere.">
+<meta name="twitter:image" content="https://trunghieuvn.github.io/groundglass/assets/icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 60 40" width="30" height="20" aria-hidden="true">
+        <rect x="0" y="0" width="60" height="40" rx="4" fill="#E7E2D8"/>
+        <circle cx="30" cy="20" r="14" fill="#B9B2A4"/>
+        <circle cx="30" cy="20" r="9" fill="#8E877A"/>
+        <rect x="21" y="19" width="18" height="2" fill="#141210"/>
+        <path d="M6,6 h9 v2 h-7 v7 h-2 z M54,6 h-9 v2 h7 v7 h2 z M6,34 h9 v-2 h-7 v-7 h-2 z M54,34 h-9 v-2 h7 v-7 h2 z" fill="#E8A33D"/>
+      </svg>
+      Groundglass
+    </a>
+    <div class="links">
+      <a href="index.html#finder" class="hide-sm">Viewfinder</a>
+      <a href="index.html#manual" class="hide-sm">Manual</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="wrap doc">
+
+  <h1>Privacy Policy</h1>
+  <p class="upd">Effective date: September 5, 2026</p>
+
+  <p class="callout">Groundglass — published on Google Play as <em>Groundglass: Manual Camera</em>, package <code>vn.fighttech.groundglass</code> — is a manual camera app for Android published by FightTech VN. In short: <strong>your photos are captured, processed and stored on your phone, they are never uploaded, and there is no account.</strong> The app has no network access at all — it collects nothing and sends nothing. We do not sell any data.</p>
+
+  <h2>What the app does</h2>
+  <p>The app operates your phone's camera and writes the resulting image file to your own storage. Everything — exposure, focus, white balance and RAW conversion — runs on your device's own CPU and GPU. There is no cloud processing, no user account and no sign-in. The app declares no internet permission, so it cannot send anything anywhere even if it wanted to.</p>
+
+  <h2>Permissions the app declares</h2>
+  <p>These are the only permissions in the app's manifest. Android asks you for each one at the moment it is first needed, and you can revoke any of them later in <em>Settings → Apps → Groundglass → Permissions</em>.</p>
+  <ul>
+    <li><strong>Camera</strong> (<code>CAMERA</code>) — required. It is what runs the viewfinder and takes the photo. Without it the app cannot function. The camera feed is rendered on screen and written to the file you capture; it is never streamed anywhere.</li>
+    <li><strong>Location, optional</strong> (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>) — used for one purpose only: writing GPS coordinates into the EXIF metadata of the photos you take, on the device. It is requested only if you switch on <em>Save location in photos</em> in the app's settings, which is off by default. The coordinates are stored inside your own image files and are not transmitted to us or to any third party. Leave the setting off and the app never asks for the permission and never reads your location. GPS hardware is declared as optional, so the app installs on phones without it.</li>
+    <li><strong>Storage, on older Android only</strong> (<code>WRITE_EXTERNAL_STORAGE</code>, declared with <code>maxSdkVersion="28"</code>) — needed on Android 9 and earlier to save your photos into the shared Pictures library. On Android 10 and newer the app writes through the system MediaStore and this permission is neither declared nor requested. The app does not ask for broad access to read your existing photo library.</li>
+  </ul>
+  <p>The app declares <strong>no internet permission</strong>, and no contacts, microphone, phone, calendar, SMS or background-location permission, and no "all files access". It also declares <strong>no advertising permission</strong>: <code>AD_ID</code> and the Android Ad Services permissions are explicitly removed from the build, so the app cannot read your advertising identifier.</p>
+
+  <h2>Your photos and where they go</h2>
+  <p>Photos are written into a folder inside your device's public <code>Pictures</code> directory — <code>Pictures/Groundglass</code> by default, or whichever folder name you set — and registered with your media library so Gallery and other apps can see them. You choose the file format (JPEG, plus RAW DNG on devices whose sensor supports it), the quality and the filename pattern. Photos you take belong to you and stay on your device until you move or delete them; uninstalling the app does not delete them.</p>
+  <p>The image files carry standard EXIF metadata written by the app — exposure time, ISO, aperture, focal length, white balance, orientation, the date and time from your device, and GPS coordinates if and only if you enabled geotagging. That metadata travels inside the file, so bear it in mind before sharing a photo publicly. It is written locally; we never see it.</p>
+
+  <h2>Analytics and crash reporting</h2>
+  <p><strong>There is none.</strong> This version of Groundglass contains no analytics SDK, no crash-reporting SDK, no advertising SDK and no network permission. Nothing about how you use the app is counted, recorded or transmitted, and there is no switch to turn off because there is nothing running.</p>
+  <p><strong>What is never sent — because nothing is:</strong> your photographs or any part of one, thumbnails, file names, folder names, your GPS location or geotags, the contents of your media library, your advertising identifier, your name, email or any account identifier.</p>
+  <p><strong>No advertising.</strong> The app contains no ads and no ad SDK.</p>
+
+  <h2>Data we collect</h2>
+  <p><strong>None.</strong> We — FightTech VN — operate no server for this app, hold no database of its users, and receive no data from it whatsoever. We never see your photos, your settings or the fact that you opened the app. There is no account system, no newsletter and no in-app purchase.</p>
+
+  <h2>Data shared with third parties</h2>
+  <p><strong>None.</strong> The app contains no third-party SDK that receives data, and no data is shared, sold or used for advertising or ad targeting. Nothing leaves your device.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>All app data — your settings and saved preferences — lives on your device and is removed when you uninstall the app. Photos you have taken are yours and stay in <code>Pictures</code> until you delete them.</p>
+  <p>We hold nothing to retain or delete: no data about you ever reaches us. Uninstalling the app, or clearing its data, removes everything it has stored — all of which was only ever on your own device.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+
+  <h2>Your responsibility</h2>
+  <p>You are responsible for the photographs you take and how you use them, including consent of the people you photograph and the law of the place you are shooting in.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app's data practices change, this page will be updated and the date above revised before the new version is released. If a future version adds a permission or an SDK, it will be listed here first. <em>Written on September 5, 2026 for the first Groundglass release, which ships with no analytics, no crash reporting and no internet permission. Should a later version add any of these, this page will say so, and name the in-app switch that controls it, before that version is released.</em></p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy, or a request about your data? Email <a href="mailto:trunghieu4121993@gmail.com">trunghieu4121993@gmail.com</a>.</p>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand" style="gap:10px">
+          <svg viewBox="0 0 60 40" width="26" height="17" aria-hidden="true">
+        <rect x="0" y="0" width="60" height="40" rx="4" fill="#E7E2D8"/>
+        <circle cx="30" cy="20" r="14" fill="#B9B2A4"/>
+        <circle cx="30" cy="20" r="9" fill="#8E877A"/>
+        <rect x="21" y="19" width="18" height="2" fill="#141210"/>
+        <path d="M6,6 h9 v2 h-7 v7 h-2 z M54,6 h-9 v2 h7 v7 h2 z M6,34 h9 v-2 h-7 v-7 h-2 z M54,34 h-9 v-2 h7 v-7 h2 z" fill="#E8A33D"/>
+      </svg>
+          Groundglass
+        </div>
+        <div class="pkg" style="margin-top:8px">vn.fighttech.groundglass</div>
+      </div>
+      <div class="links">
+        <a href="./">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:trunghieu4121993@gmail.com">Contact</a>
+      </div>
+    </div>
+    <p class="fine">Groundglass — a manual stills camera for Android, made in Vietnam by FightTech VN.<br>
+    &copy; 2026 FightTech VN. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
