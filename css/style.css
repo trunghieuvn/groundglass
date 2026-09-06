@@ -32,7 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }  /* height:auto is load-bearing: every <img> carries width/height attributes, and without it the attribute height wins and a 720x1600 shot renders 262x1600 — stretched */
 a { color: var(--amber); text-decoration: none; }
 a:hover { color: #f3b45a; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
